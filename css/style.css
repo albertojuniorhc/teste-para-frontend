@@ -2,7 +2,7 @@
     --text-color: #3199DC;
     --title-color: #2A3E51;
     --background-color: #3199DC;
-  }
+}
 
 * {
     margin: 0;
@@ -25,7 +25,8 @@ ul {
     color: var(--title-color);
     font-size: 18px;
 }
-.headerwrapper {
+
+.header-wrapper {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -162,7 +163,6 @@ ul {
 .imagecard {
     max-width: 360px;
     max-height: 200px;
-    
 }
 
 .card {
@@ -197,7 +197,6 @@ ul {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 30px;
 }
-
 
 .news-3columnslow {
     display: grid;
