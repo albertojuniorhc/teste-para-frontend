@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Folha de S.Paulo</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 
 <body>
@@ -13,25 +14,32 @@
         <header class="header-wrapper">
             <img src="./slices/desktop/menu-icon.png" alt="Menu">
             <div class="middle">
-                <img src="./slices/desktop/logo.png" alt="Folha Logo">
+                <picture>
+                    <source srcset="./slices/mobile/logo.png" media="(min-width: 376px) and (max-width: 450px)">
+                    <source srcset="./slices/tablet/logo.png" media="(min-width: 451px) and (max-width: 1140px)">
+                    <source srcset="./slices/desktop/logo.png" media="(min-width: 1141px)">
+                    <img class="img" src="./slices/desktop/logo.png" alt="Folha Logo">
+                </picture>
                 <p class="middle-text">O Site de testes para <strong>novos webs</strong></p>
             </div>
-            <img src="./slices/desktop/facetw.png" alt="Social Medias">
+            <img class="socialmedias" src="./slices/desktop/facetw.png" alt="Social Medias">
         </header>
 
-        <section class="rotate">
+        <section class="container rotate">
             <div class="image">
-                <img src="./slices/desktop/image_rotate.png"
-                    alt="Imagem com pessoa de costas apontando para a direita.">
+                <picture>
+                    <source srcset="./slices/mobile/image_rotate.png" media="(min-width: 376px) and (max-width: 450px)">
+                    <source srcset="./slices/tablet/image_rotate.png"
+                        media="(min-width: 451px) and (max-width: 1140px)">
+                    <source srcset="./slices/desktop/image_rotate.png" media="(min-width: 1141px)">
+                    <img class="image-rotate" src="./slices/desktop/image_rotate.png"
+                        alt="Imagem com pessoa de costas apontando para a direita.">
+                </picture>
                 <button type="button" class="arrowleft"></button>
                 <button type="button" class="arrowright"></button>
-
-                <div class="banner-texts">
-                    <h1 class="banner-title">Mussum Ipsim Cacilds</h1>
-                    <h2 class="banner-subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br />Lorem
-                        iconsectetur, adipisicing elit</h2>
-                </div>
-
+                <h1 class="banner-title">Mussum Ipsim Cacilds</h1>
+                <h2 class="banner-subtitle">Lorem ipsum dolor sitng elit.<br />Lorem
+                    iconsectetur, adipisicing elit</h2>
                 <ul class="selector">
                     <li class="selectoritem selected"></li>
                     <li class="selectoritem"></li>
@@ -40,24 +48,45 @@
             </div>
         </section>
 
-        <section class="container-grid">
+        <section class="container grid3">
             <h1 class="title">top cacilds</h1>
             <div class="cardtop cardtopa">
-                <img class="imagenews" src="./slices/desktop/highlight-01.png" alt="Criança no balancê">
+                <picture>
+                    <source srcset="./slices/mobile/highlight-01.png" media="(min-width: 376px) and (max-width: 450px)">
+                    <source srcset="./slices/tablet/highlight-01.png"
+                        media="(min-width: 451px) and (max-width: 1140px)">
+                    <source srcset="./slices/desktop/highlight-01.png" media="(min-width: 1141px)">
+                    <img class="imagenews" src="./slices/desktop/highlight-01.png" alt="Criança no balancê">
+                </picture>
                 <p class="cardtext">Pindureta</p>
             </div>
             <div class="cardtop cardtopb">
-                <img class="imagenews" src="./slices/desktop/highlight-02.png"
-                    alt="Figura abstrata em formato de animal de grande porte">
+
+                <picture>
+                    <source srcset="./slices/mobile/highlight-02.png" media="(min-width: 376px) and (max-width: 450px)">
+                    <source srcset="./slices/tablet/highlight-02.png"
+                        media="(min-width: 451px) and (max-width: 1140px)">
+                    <source srcset="./slices/desktop/highlight-02.png" media="(min-width: 1141px)">
+                    <img class="imagenews" src="./slices/desktop/highlight-02.png"
+                        alt="Figura abstrata em formato de animal de grande porte">
+                </picture>
                 <p class="cardtext">Bolis</p>
             </div>
             <div class="cardtop cardtopc">
-                <img class="imagenews" src="./slices/desktop/highlight-03.png" alt="Pássaro com olhos vermelhos">
+                <picture>
+                    <source srcset="./slices/mobile/highlight-03.png" media="(min-width: 376px) and (max-width: 450px)">
+                    <source srcset="./slices/tablet/highlight-03.png"
+                        media="(min-width: 451px) and (max-width: 1140px)">
+                    <source srcset="./slices/desktop/highlight-03.png" media="(min-width: 1141px)">
+                    <img class="imagenews" src="./slices/desktop/highlight-03.png"
+                        alt="Figura abstrata em formato de animal de grande porte">
+                </picture>
+
                 <p class="cardtext">Sapien</p>
             </div>
         </section>
 
-        <section class="container-grid">
+        <section class="container container-grid">
             <h1 class="title">divoltis porris</h1>
             <article class="card carda">
                 <img class="imagenews" src="./slices/desktop/divoltis_porris-01.png" alt="Mussum">
@@ -81,12 +110,12 @@
                 <h2 class="card-title">Aenean</h2>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
             </article>
-            <div class="publi">
+            <div class="publi-desktop">
                 <img src="./slices/desktop/ads-300x600.png" alt="Imagem de publicidade Empresa ESSER">
             </div>
         </section>
 
-        <section class="news-3columnslow">
+        <section class="container container-grid">
             <div class="textnews">
                 <h1 class="textnews-title">paosos filhis, espirits, santis</h1>
                 <ul>
@@ -139,6 +168,15 @@
                     </div>
                 </article>
             </section>
+
+            <section class="publi-tablet">
+                <img src="./slices/tablet/ads-300x250.png" alt="Publicidade">
+            </section>
+
+        </section>
+
+        <section class="publi-mobile">
+            <img src="./slices/mobile/ads-300x250.png" alt="Publicidade">
         </section>
 
         <footer>
