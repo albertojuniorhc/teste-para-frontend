@@ -72,8 +72,6 @@
     }
     
     .grid3 {
-        display: grid;
-        justify-content: center;
         column-gap: 10px;
         grid-template-columns: repeat(3, 1fr);
     }
