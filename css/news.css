@@ -1,0 +1,78 @@
+:root {
+    --text-color: #3199DC;
+    --title-color: #2A3E51;
+    --background-color: #3199DC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1140px;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    column-gap: 30px;
+}
+
+/* .more-news {
+    
+}  */
+
+.more-news__title {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.more-news__title--blue {
+    color: var(--text-color);
+}
+
+.more-news__title--red {
+    color: red;
+}
+
+.more-news__list {
+    list-style: none;
+}
+
+.more-news__item {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+
+.post {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+/* .post__image {
+
+} */
+
+/* .post__text-container {
+
+} */
+
+.post__title {
+    margin-left: 20px;
+    margin-top: 20px;
+    color: red;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.post__description {
+    margin-left: 20px;
+}
