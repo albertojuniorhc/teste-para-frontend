@@ -4,167 +4,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Folha de S.Paulo</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/responsive.css">
+    <title>Teste para FrontEnd - Folha de SP.</title>
 </head>
 
 <body>
     <main class="cacilds">
-        <header class="header-wrapper">
-            <img src="./slices/desktop/menu-icon.png" alt="Menu">
-            <div class="middle">
+
+        <header class="header">
+            <img class="header__menu" src="./slices/desktop/menu-icon.png" alt="Menu">
+            <div class="logo">
                 <picture>
                     <source srcset="./slices/mobile/logo.png" media="(min-width: 320px) and (max-width: 450px)">
                     <source srcset="./slices/tablet/logo.png" media="(min-width: 451px) and (max-width: 1140px)">
                     <source srcset="./slices/desktop/logo.png" media="(min-width: 1141px)">
-                    <img class="img" src="./slices/desktop/logo.png" alt="Folha Logo">
+                    <img class="logo__img" src="./slices/desktop/logo.png" alt="Folha Logo">
                 </picture>
-                <p class="middle-text">O Site de testes para <strong>novos webs</strong></p>
+                <p class="logo__text">O Site de testes para <strong>novos webs</strong></p>
             </div>
             <img class="social-medias" src="./slices/desktop/facetw.png" alt="Social Medias">
         </header>
 
-        <section class="container rotate">
-            <div class="image">
+        <section class="banner container">
+            <div class="banner__container">
                 <picture>
                     <source srcset="./slices/mobile/image_rotate.png" media="(min-width: 320px) and (max-width: 450px)">
                     <source srcset="./slices/tablet/image_rotate.png"
                         media="(min-width: 451px) and (max-width: 1140px)">
                     <source srcset="./slices/desktop/image_rotate.png" media="(min-width: 1141px)">
-                    <img class="image-rotate" src="./slices/desktop/image_rotate.png"
+                    <img class="banner__image" src="./slices/desktop/image_rotate.png"
                         alt="Imagem com pessoa de costas apontando para a direita.">
                 </picture>
-                <button type="button" class="arrow-left"></button>
-                <button type="button" class="arrow-right"></button>
-                <h1 class="banner-title">Mussum Ipsim Cacilds</h1>
-                <h2 class="banner-subtitle">Lorem ipsum dolor sitng elit.<br />Lorem
+                <button type="button" class="banner__arrow banner__arrow--left"></button>
+                <button type="button" class="banner__arrow banner__arrow--right"></button>
+                <h1 class="banner__title">Mussum Ipsim Cacilds</h1>
+                <h2 class="banner__subtitle">Lorem ipsum dolor sitng elit.<br />Lorem
                     iconsectetur, adipisicing elit</h2>
                 <ul class="selector">
-                    <li class="selectoritem selected"></li>
-                    <li class="selectoritem"></li>
-                    <li class="selectoritem"></li>
+                    <li class="selector__item selector__item--selected"></li>
+                    <li class="selector__item"></li>
+                    <li class="selector__item"></li>
                 </ul>
             </div>
         </section>
 
-        <section class="container grid3">
-            <h1 class="title">top cacilds</h1>
-            <div class="card-top">
+        <section class="news-container news-container--3col container ">
+            <h1 class="news-container__title news-container__title--3col">top cacilds</h1>
+            <div class="news-post">
                 <picture>
                     <source srcset="./slices/mobile/highlight-01.png" media="(min-width: 320px) and (max-width: 450px)">
                     <source srcset="./slices/tablet/highlight-01.png"
                         media="(min-width: 451px) and (max-width: 1140px)">
                     <source srcset="./slices/desktop/highlight-01.png" media="(min-width: 1141px)">
-                    <img class="imagenews" src="./slices/desktop/highlight-01.png" alt="Criança no balancê">
+                    <img class="news-post__image" src="./slices/desktop/highlight-01.png" alt="Criança no balancê">
                 </picture>
-                <p class="card-text">Pindureta</p>
+                <p class="news-post__description">Pindureta</p>
             </div>
-            <div class="card-top">
 
+            <div class="news-post">
                 <picture>
                     <source srcset="./slices/mobile/highlight-02.png" media="(min-width: 320px) and (max-width: 450px)">
                     <source srcset="./slices/tablet/highlight-02.png"
                         media="(min-width: 451px) and (max-width: 1140px)">
                     <source srcset="./slices/desktop/highlight-02.png" media="(min-width: 1141px)">
-                    <img class="imagenews" src="./slices/desktop/highlight-02.png"
+                    <img class="news-post__image" src="./slices/desktop/highlight-02.png"
                         alt="Figura abstrata em formato de animal de grande porte">
                 </picture>
-                <p class="card-text">Bolis</p>
+                <p class="news-post__description">Bolis</p>
             </div>
-            <div class="card-top">
+
+            <div class="news-post">
                 <picture>
                     <source srcset="./slices/mobile/highlight-03.png" media="(min-width: 320px) and (max-width: 450px)">
                     <source srcset="./slices/tablet/highlight-03.png"
                         media="(min-width: 451px) and (max-width: 1140px)">
                     <source srcset="./slices/desktop/highlight-03.png" media="(min-width: 1141px)">
-                    <img class="imagenews" src="./slices/desktop/highlight-03.png"
+                    <img class="news-post__image" src="./slices/desktop/highlight-03.png"
                         alt="Figura abstrata em formato de animal de grande porte">
                 </picture>
-
-                <p class="card-text">Sapien</p>
+                <p class="news-post__description">Sapien</p>
             </div>
         </section>
 
-        <section class="container container-grid">
-            <h1 class="title">divoltis porris</h1>
-            <article class="card">
-                <img class="imagenews" src="./slices/desktop/divoltis_porris-01.png" alt="Mussum">
-                <h2 class="card-title">Consetis</h2>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+        <section class="news-container container">
+            <h1 class="news-container__title">divoltis porris</h1>
+            <article class="news-post news-post--border">
+                <img class="news-post__image" src="./slices/desktop/divoltis_porris-01.png" alt="Mussum">
+                <h2 class="news-post__title">Consetis</h2>
+                <p class="news-post__text">Lorem ipsum dolor sit amet consectetur.</p>
             </article>
-            <article class="card">
-                <img class="imagenews" src="./slices/desktop/divoltis_porris-02.png" alt="Pessoas presas conversando">
-                <h2 class="card-title">Aenean</h2>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+            <article class="news-post news-post--border">
+                <img class="news-post__image" src="./slices/desktop/divoltis_porris-02.png"
+                    alt="Pessoas presas conversando">
+                <h2 class="news-post__title">Aenean</h2>
+                <p class="news-post__text">Lorem ipsum dolor sit amet consectetur.</p>
             </article>
-            <article class="card">
-                <img class="imagenews" src="./slices/desktop/divoltis_porris-03.png"
+            <article class="news-post news-post--border">
+                <img class="news-post__image" src="./slices/desktop/divoltis_porris-03.png"
                     alt="Pessoa tocando violão e cantando">
-                <h2 class="card-title">Aenean</h2>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur</p>
+                <h2 class="news-post__title">Aenean</h2>
+                <p class="news-post__text">Lorem ipsum dolor sit amet consectetur</p>
             </article>
-            <article class="card">
-                <img class="imagenews" src="./slices/desktop/divoltis_porris-04.png"
+            <article class="news-post news-post--border">
+                <img class="news-post__image" src="./slices/desktop/divoltis_porris-04.png"
                     alt="Imagem abstrata de cientista tocando uma cabeça gigante">
-                <h2 class="card-title">Aenean</h2>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+                <h2 class="news-post__title">Aenean</h2>
+                <p class="news-post__text">Lorem ipsum dolor sit amet consectetur.</p>
             </article>
-            <div class="publi-desktop">
+            <div class="news-post__publi-desktop">
                 <img src="./slices/desktop/ads-300x600.png" alt="Imagem de publicidade Empresa ESSER">
             </div>
         </section>
 
-        <section class="container container-grid">
-            <div class="textnews">
-                <h1 class="textnews-title">paosos filhis, espirits, santis</h1>
-                <ul>
-                    <li class="textnews-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum
+        <section class="news-container container">
+            <section class="more-news">
+                <h1 class="more-news__title more-news__title--blue">paosos filhis, espirits, santis</h1>
+                <ul class="more-news__list">
+                    <li class="more-news__item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum
                         dolor, sit amet
                         consectetur adipisicing elit</li>
-                    <li class="textnews-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum
+                    <li class="more-news__item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum
                         dolor, sit amet
                         consectetur adipisicing elit</li>
-                    <li class="textnews-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-                    <li class="textnews-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum
+                    <li class="more-news__item">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                    <li class="more-news__item">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum
                         dolor, sit amet consectetur
                         adipisicing elit</li>
-                    <li class="textnews-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                    <li class="more-news__item">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
                 </ul>
-            </div>
+            </section>
 
-            <section class="morenews">
-                <h1 class="morenews-title">se pirulitá</h1>
-                <article class="cardright">
-                    <img src="./slices/desktop/se_pirulita-01.png" alt="Pintura de gatos estilizados.">
-                    <div class="textright">
-                        <h2 class="morenews-subtitle">Nam Liber</h2>
-                        <p class="morenews-text">Casamentiss faiz malandris se pirulitá</p>
+            <section class="more-news">
+                <h1 class="more-news__title more-news__title--red">se pirulitá</h1>
+
+                <article class="post">
+                    <img class="post__image" src="./slices/desktop/se_pirulita-01.png"
+                        alt="Pintura de gatos estilizados.">
+                    <div class="post__text-container">
+                        <h2 class="post__title">Nam Liber</h2>
+                        <p class="post__description">Casamentiss faiz malandris se pirulitá</p>
                     </div>
                 </article>
-                <article class="cardright">
-                    <img src="./slices/desktop/se_pirulita-02.png" alt="Pintura mulher com cabelos azuis.">
-                    <div class="textright">
-                        <h2 class="morenews-subtitle">Gostis</h2>
-                        <p class="morenews-text">Casamentiss faiz malandris se pirulitá</p>
+
+                <article class="post">
+                    <img class="post__image" src="./slices/desktop/se_pirulita-02.png"
+                        alt="Pintura mulher com cabelos azuis.">
+                    <div class="post__text-container">
+                        <h2 class="post__title">Gostis</h2>
+                        <p class="post__description">Casamentiss faiz malandris se pirulitá</p>
                     </div>
                 </article>
             </section>
 
-            <section class="morenews">
-                <h1 class="morenews-title">suco de cevadiss</h1>
-                <article class="cardright">
-                    <img src="./slices/desktop/suco_de_cevadiss-01.png" alt="Pintura de gatos estilizados.">
-                    <div class="textright">
-                        <h2 class="morenews-subtitle">Nam Liber</h2>
-                        <p class="morenews-text">Casamentiss faiz malandris se pirulitá</p>
+            <section class="more-news">
+                <h1 class="more-news__title more-news__title--red">suco de cevadiss</h1>
+
+                <article class=" post">
+                    <img class="post__image" src="./slices/desktop/suco_de_cevadiss-01.png"
+                        alt="Pintura de gatos estilizados.">
+                    <div class="post__text-container">
+                        <h2 class="post__title">Nam Liber</h2>
+                        <p class="post__description">Casamentiss faiz malandris se pirulitá</p>
                     </div>
                 </article>
-                <article class="cardright">
-                    <img src="./slices/desktop/suco_de_cevadiss-02.png" alt="Pintura mulher com cabelos azuis.">
-                    <div class="textright">
-                        <h2 class="morenews-subtitle">Gostis</h2>
-                        <p class="morenews-text">Casamentiss faiz malandris se pirulitá</p>
+
+                <article class="post">
+                    <img class="post__image" src="./slices/desktop/suco_de_cevadiss-02.png"
+                        alt="Pintura mulher com cabelos azuis.">
+                    <div class="post__text-container">
+                        <h2 class="post__title">Gostis</h2>
+                        <p class="post__description">Casamentiss faiz malandris se pirulitá</p>
                     </div>
                 </article>
             </section>
@@ -172,18 +181,18 @@
             <section class="publi-tablet">
                 <img src="./slices/tablet/ads-300x250.png" alt="Publicidade">
             </section>
-
         </section>
 
         <section class="publi-mobile">
             <img src="./slices/mobile/ads-300x250.png" alt="Publicidade">
         </section>
 
+
         <footer>
             <a class="voltatopo" href="#">Voltar ao topo</a>
             <div class="copyright">
-                <img class="copyright-logo" src="./slices/desktop/logo_footer.png" alt="_Folha">
-                <p class="copyright-text">Texto de copyright. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                <img class="copyright__logo" src="./slices/desktop/logo_footer.png" alt="_Folha">
+                <p class="copyright__text">Texto de copyright. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Asperiores sit
                     aperiam
                     cupiditate odio assumenda magni culpa reiciendis debitis adipisci rem. Ratione quaerat adipisci
@@ -194,6 +203,7 @@
             </div>
         </footer>
     </main>
+
 </body>
 
 </html>
