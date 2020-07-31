@@ -1,3 +1,13 @@
+### This project is being used for my studies in FrontEnd.
+
+I'm using Sass as a preprocessing in CSS. 
+To run this projet, you have to clone this repository, and on root folder, run this command:
+
+"sass assets/scss/styles.scss assets/css/styles.css"
+
+If you don't have "sass" command, please visit https://sass-lang.com/install to get information.
+
+The text below is the original README.md.
 ```
  _            _   _         _     _  __  
 | |_    ___  | | | |  ___  | |   (_) \ \ 
