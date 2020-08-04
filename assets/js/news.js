@@ -4,7 +4,7 @@ function getNewsFromApi() {
 
     fetch(URLAPI)
         .then(function (response) {
-            console.log(document.readyState)
+            // console.log(document.readyState)
             return response.json();
         })
 
@@ -34,7 +34,7 @@ function getNewsFromApi() {
 }
 
 
-console.log(document.readyState)
+// console.log(document.readyState)
 
 if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", getNewsFromApi);

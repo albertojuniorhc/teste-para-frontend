@@ -26,17 +26,39 @@
         </header>
 
         <section class="banner container">
-            <div class="banner__container">
+            <div id="slide" class="banner__container">
                 <picture>
                     <source srcset="./slices/mobile/image_rotate.png" media="(min-width: 320px) and (max-width: 450px)">
                     <source srcset="./slices/tablet/image_rotate.png"
                         media="(min-width: 451px) and (max-width: 1140px)">
                     <source srcset="./slices/desktop/image_rotate.png" media="(min-width: 1141px)">
-                    <img class="banner__image" src="./slices/desktop/image_rotate.png"
+                    <img class="banner__image active rotate" src="./slices/desktop/image_rotate.png"
                         alt="Imagem com pessoa de costas apontando para a direita.">
                 </picture>
+
+                <picture>
+                    <source srcset="./slices/mobile/image_rotate_02.png"
+                        media="(min-width: 320px) and (max-width: 450px)">
+                    <source srcset="./slices/tablet/image_rotate_02.png"
+                        media="(min-width: 451px) and (max-width: 1140px)">
+                    <source srcset="./slices/desktop/image_rotate_02.png" media="(min-width: 1141px)">
+                    <img class="banner__image rotate" src="./slices/desktop/image_rotate_02.png"
+                        alt="Imagem com pessoa de costas apontando para a direita.">
+                </picture>
+
+                <picture>
+                    <source srcset="./slices/mobile/image_rotate_03.png"
+                        media="(min-width: 320px) and (max-width: 450px)">
+                    <source srcset="./slices/tablet/image_rotate_03.png"
+                        media="(min-width: 451px) and (max-width: 1140px)">
+                    <source srcset="./slices/desktop/image_rotate_03.png" media="(min-width: 1141px)">
+                    <img class="banner__image rotate" src="./slices/desktop/image_rotate_03.png"
+                        alt="Imagem com pessoa de costas apontando para a direita.">
+                </picture>
+
+
                 <button type="button" class="banner__arrow banner__arrow--left"></button>
-                <button type="button" class="banner__arrow banner__arrow--right"></button>
+                <button type=" button" class="banner__arrow banner__arrow--right"></button>
                 <h1 class="banner__title">Mussum Ipsim Cacilds</h1>
                 <h2 class="banner__subtitle">Lorem ipsum dolor sitng elit.<br />Lorem
                     iconsectetur, adipisicing elit</h2>
@@ -205,6 +227,7 @@
     </main>
 
     <script src="./assets/js/news.js"></script>
+    <script src="./assets/js/rotate.js"></script>
 </body>
 
 </html>

@@ -6,6 +6,14 @@
   box-sizing: border-box;
 }
 
+#slide .rotate {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
 .cacilds {
   margin-left: auto;
   margin-right: auto;
