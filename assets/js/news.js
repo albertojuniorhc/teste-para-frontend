@@ -1,6 +1,5 @@
 const URLAPI = "https://5f2859b3f5d27e001612eede.mockapi.io/article"
 
-
 function getNewsFromApi() {
 
     fetch(URLAPI)
