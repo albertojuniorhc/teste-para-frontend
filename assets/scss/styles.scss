@@ -233,6 +233,11 @@
     margin-top: 10px;
     color: gray;
     margin-bottom: $value-low-space;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
   }
 
   &__publi-desktop {
