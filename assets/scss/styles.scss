@@ -130,6 +130,10 @@
       display: none;
     }
 
+    &:disabled {
+      opacity: 0.5;
+    }
+
     &--left {
       background-image: url(../../slices/desktop/arrow_left-icon.png);
       left: -25px;

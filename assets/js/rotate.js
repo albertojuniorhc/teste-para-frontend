@@ -1,6 +1,3 @@
-const imagesTag = document.getElementsByClassName("rotate");
-const imageActive = document.getElementsByClassName("rotate active")
-const itensTag = document.getElementsByClassName("selector__item");
 const leftButton = document.getElementsByClassName("banner__arrow--left");
 const rightButton = document.getElementsByClassName("banner__arrow--right");
 
@@ -8,31 +5,53 @@ leftButton[0].addEventListener("click", previmage);
 rightButton[0].addEventListener("click", nextimage);
 
 function previmage() {
-    console.log("back");
+
+    const imagePosition = getImagesPosition()
+    imagePosition.active[0].classList.remove("active")
+    imagePosition.prev.classList.add("active")
+    getImagesPosition()
 }
 
 function nextimage() {
 
-    const nextParent = imageActive[0].parentNode.nextElementSibling;
-    // imageActive[0].classList.remove("active");
-    // next.classList.add("active");
-    console.log(nextParent.children[3])
-
-    nextElement = nextParent.children[3].classList.add("active");
-    imageActive[0].classList.remove("active")
-
-
-
-
-
+    const imagePosition = getImagesPosition()
+    imagePosition.active[0].classList.remove("active")
+    imagePosition.next.classList.add("active");
+    getImagesPosition()
 }
 
-// for (let i = 0; i < imagesTag.length; i++) {
-//     if (i !== 1) {
-//         imagesTag[i].classList.add("imagenone");
+function getImagesPosition() {
 
-//     }
+    const imageActive = document.getElementsByClassName("rotate active")
+    const nextImage = imageActive[0].parentNode.nextElementSibling.children[3]
 
-// }
+    const previousElement = imageActive[0].parentNode.previousElementSibling
+    const previousImage = previousElement ? previousElement.children[3] : null;
 
-console.log(document.getElementById("slide"))
+    const valueReturn = {
+        prev: previousImage,
+        active: imageActive,
+        next: nextImage
+    }
+
+    enableDisableNavigation(valueReturn)
+
+    return valueReturn;
+}
+
+function enableDisableNavigation(imagePosition) {
+
+    if (imagePosition.next == undefined || imagePosition.next == null) {
+        rightButton[0].disabled = true;
+    } else {
+        rightButton[0].disabled = false;
+    }
+
+    if (imagePosition.prev == undefined || imagePosition.prev == null) {
+        leftButton[0].disabled = true;
+    } else {
+        leftButton[0].disabled = false;
+    }
+}
+
+getImagesPosition()
