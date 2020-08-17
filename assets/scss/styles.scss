@@ -6,6 +6,14 @@
   box-sizing: border-box;
 }
 
+#slide .rotate {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
 .cacilds {
   margin-left: auto;
   margin-right: auto;
@@ -122,6 +130,10 @@
       display: none;
     }
 
+    &:disabled {
+      opacity: 0.5;
+    }
+
     &--left {
       background-image: url(../../slices/desktop/arrow_left-icon.png);
       left: -25px;
@@ -233,6 +245,10 @@
     margin-top: 10px;
     color: gray;
     margin-bottom: $value-low-space;
+    width: 350px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   &__publi-desktop {
